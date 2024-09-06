@@ -17,6 +17,7 @@ touch requirements.txt .gitignore dvc.yaml params.yaml setup.py
 
 mkdir -p config src/utils
 touch config/config.yaml config/secrets.yaml
+```
 ## Install Packags
 ```bash
 pip install -r requirements.txt
