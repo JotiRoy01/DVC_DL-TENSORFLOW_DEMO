@@ -31,3 +31,7 @@ pip list
 git init
 dvc init
 ```
+## Check intall package
+```bash
+pip freeze > requirements.txt
+```
