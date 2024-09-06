@@ -25,13 +25,15 @@ touch src/stage_01_load_save.py src/utils/all_utils.py
 ```bash
 pip install -r requirements.txt
 pip list
+- install src
+pip install -e .
 ```
 ## Initialize tracker
 ```bash
 git init
 dvc init
 ```
-## Check intall package
+## Check install package
 ```bash
 pip freeze > requirements.txt
 ```
