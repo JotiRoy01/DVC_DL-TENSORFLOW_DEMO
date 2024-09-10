@@ -2,10 +2,12 @@ dvc
 tensorflow
 matplotlib
 numpy 
+keras
 pandas
 tqdm
 PyYAML
 boto3 # >> for aws command line access
 -e .
+
 
 

@@ -1,11 +1,12 @@
 from src.utils.all_utils import read_yaml, create_directory
-from src.utils.model import get_VGG_16_model
+from src.utils.models import get_VGG_16_model, prepare_model
 import argparse
 import pandas as pd
 import os
 import shutil
 from tqdm import tqdm
 import logging
+import io
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 log_dir = "logs"
@@ -30,7 +31,24 @@ def prepare_base_model(config_path, params_path) :
 
     base_model_path = os.path.join(base_model_dir_path, base_model_name)
     model = get_VGG_16_model(input_shape=params["IMAGE_SIZE"], model_path= base_model_path)
+    full_model = prepare_model(
+        model,
+        CLASSES = params["CLASSES"],
+        freeze_all = True,
+        freeze_till = None,
+        learning_rate = params["LEARNING_RATE"]
+    )
 
+    updated_base_model = os.path.join(
+        base_model_dir_path,
+        artifacts["UPDATED_BASE_MODEL_NAME"]
+    )
+    def _log_model.summary(model) :
+    with io.StringIO() as stress :
+        model.summary(print_fn)
+
+    logging.info(f"{full_model.summary()}")
+    full_model.save(updated_base_model)
 
 if __name__ == "__main__" :
     args = argparse.ArgumentParser()

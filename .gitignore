@@ -8,3 +8,10 @@ src.egg-info
 src/utils/__pycache__/all_utils.cpython-310.pyc
 src/utils/__pycache__/__init__.cpython-310.pyc
 src/__pycache__/__init__.cpython-310.pyc
+
+
+artifacts/base_model/VGG16_base_model.h5
+artifacts/base_model/updated_VGG16_bash_model.h5
+src/utils/__pycache__/models.cpython-310.pyc
+logs/running_logs.log
+logs/running_logs.log
