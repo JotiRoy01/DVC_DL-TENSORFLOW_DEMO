@@ -20,6 +20,8 @@ touch config/config.yaml config/secrets.yaml
 
 touch src/__init__.py src/utils/__init__.py
 touch src/stage_01_load_save.py src/utils/all_utils.py
+
+touch src/stage_02_prepare_base_model.py
 ```
 ## Install Packags
 ```bash
@@ -37,3 +39,4 @@ dvc init
 ```bash
 pip freeze > requirements.txt
 ```
+
