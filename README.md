@@ -22,6 +22,8 @@ touch src/__init__.py src/utils/__init__.py
 touch src/stage_01_load_save.py src/utils/all_utils.py
 
 touch src/stage_02_prepare_base_model.py
+touch src/stage_03_prepare_callbacks.py
+touch src/utils/callbacks.py
 ```
 ## Install Packags
 ```bash
