@@ -24,6 +24,7 @@ touch src/stage_01_load_save.py src/utils/all_utils.py
 touch src/stage_02_prepare_base_model.py
 touch src/stage_03_prepare_callbacks.py
 touch src/utils/callbacks.py
+touch src/stage_04_train.py
 ```
 ## Install Packags
 ```bash
