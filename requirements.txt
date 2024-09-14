@@ -7,6 +7,7 @@ pandas
 tqdm
 PyYAML
 boto3 # >> for aws command line access
+joblib
 -e .
 
 
