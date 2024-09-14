@@ -1,5 +1,4 @@
 from src.utils.all_utils import read_yaml, create_directory
-from src.utils.models import get_VGG_16_model, prepare_model
 from src.utils.callbacks import create_and_save_tensorboard_callbacks, create_and_save_checkpoint_callbacks
 import argparse
 import pandas as pd
@@ -7,7 +6,7 @@ import os
 import shutil
 from tqdm import tqdm
 import logging
-import io
+
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]"
 log_dir = "logs"
