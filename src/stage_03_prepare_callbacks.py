@@ -34,8 +34,8 @@ def prepare_callbacks(config_path, params_path) :
         callbacks_dir
     ])
 
-create_and_save_tensorboard_callbacks(callbacks_dir, tensorboard_log_dir)
-create_and_save_checkpoint_callbacks(callbacks_dir, checkpoint_dir)
+    create_and_save_tensorboard_callbacks(callbacks_dir, tensorboard_log_dir)
+    create_and_save_checkpoint_callbacks(callbacks_dir, checkpoint_dir)
 
 
 

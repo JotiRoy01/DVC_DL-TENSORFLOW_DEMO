@@ -15,3 +15,8 @@ artifacts/base_model/updated_VGG16_bash_model.h5
 src/utils/__pycache__/models.cpython-310.pyc
 logs/running_logs.log
 logs/running_logs.log
+artifacts/callbacks/checkpoint_cb.cb
+artifacts/callbacks/tensorboard_cb.cb
+logs/running_logs.log
+src/utils/__pycache__/callbacks.cpython-310.pyc
+logs/running_logs.log
