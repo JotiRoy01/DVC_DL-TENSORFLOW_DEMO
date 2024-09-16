@@ -28,3 +28,16 @@ def create_and_save_tensorboard_callbacks(callbacks_dir, tensorboard_log_dir) :
     joblib.dump(tensorboard_callbacks, tb_callbacks_filepath)
 
     logging.info(f"tensorborad callback is being saved at { tb_callbacks_filepath}")
+
+
+def get_callbacks(callback_dir_path) :
+    
+    callback_path = [
+        os.path.join(callback_dir_path, bin_file) for bin_file in os.listdir(callback_dir_path)
+        if bin_file.endswith(".cb")
+    ]
+    callbacks = [
+        joblib.load(path) for path in callback_path
+    ]
+    logging.info(f"saved callbacks are loaded from {callback_dir_path}")
+    return callbacks

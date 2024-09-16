@@ -20,3 +20,4 @@ artifacts/callbacks/tensorboard_cb.cb
 logs/running_logs.log
 src/utils/__pycache__/callbacks.cpython-310.pyc
 logs/running_logs.log
+logs/running_logs.log
