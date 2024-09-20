@@ -33,3 +33,6 @@ artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/train/events.ou
 artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/train/events.out.tfevents.1726806475.ROY.23012.0.v2
 artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/validation/events.out.tfevents.1726650148.ROY.5552.1.v2
 artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/validation/events.out.tfevents.1726807741.ROY.23012.1.v2
+artifacts/tensorboard_log_dir/tb_log_at_Fri_Sep_20_12.12.18_2024/train/events.out.tfevents.1726813782.ROY.12344.0.v2
+artifacts/tensorboard_log_dir/tb_log_at_Fri_Sep_20_12.12.18_2024/validation/events.out.tfevents.1726815079.ROY.12344.1.v2
+logs/running_logs.log
