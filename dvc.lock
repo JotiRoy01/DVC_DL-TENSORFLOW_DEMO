@@ -93,3 +93,71 @@ stages:
       hash: md5
       md5: 6dea3dd4d101ee878083c0e5018a6aca
       size: 555
+  train:
+    cmd: python src/stage_04_train.py --config=config/config.yaml --params=params.yaml
+    deps:
+    - path: artifacts/base_model/updated_VGG16_bash_model.keras
+      hash: md5
+      md5: f6f253ed2639ac54f4db3574961c030a
+      size: 59135867
+    - path: artifacts/callbacks/checkpoint_cb.cb
+      hash: md5
+      md5: 030dd2da5b10d4b2a0ace1fa5f8734b5
+      size: 369
+    - path: artifacts/callbacks/tensorboard_cb.cb
+      hash: md5
+      md5: 6dea3dd4d101ee878083c0e5018a6aca
+      size: 555
+    - path: config/config.yaml
+      hash: md5
+      md5: 995be1601034eb0d6c0f4138c6fa13cc
+      size: 476
+    - path: data/cat
+      hash: md5
+      md5: 072853248ab0a72c9862aef7e796b60e.dir
+      size: 408317858
+      nfiles: 11675
+    - path: data/cat
+      hash: md5
+      md5: 072853248ab0a72c9862aef7e796b60e.dir
+      size: 408317858
+      nfiles: 11675
+    - path: params.yaml
+      hash: md5
+      md5: e8a3bcb6279538c805c68dd9a7b10695
+      size: 129
+    - path: src/stage_04_train.py
+      hash: md5
+      md5: 8384a46e67974207560ce850830a1513
+      size: 2928
+    - path: src/utils/all_utils.py
+      hash: md5
+      md5: b96d1e923db58eb6836dfbb92460fab4
+      size: 1008
+    - path: src/utils/callbacks.py
+      hash: md5
+      md5: 0dced46bb9e1a3cfaa28e900f4f5075f
+      size: 1569
+    - path: src/utils/data_management.py
+      hash: md5
+      md5: f2ae7c55e2fc96889a38eb08d66af35a
+      size: 2419
+    - path: src/utils/models.py
+      hash: md5
+      md5: 2a0b60d5d111afb3527d4997adfd4a26
+      size: 1879
+    params:
+      params.yaml:
+        AUGMENTATION: true
+        BATCH_SIZE: 16
+        EPOCHS: 1
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: artifacts/model
+      hash: md5
+      md5: fc046e251be1c5be5365997a2c34f5a6.dir
+      size: 59135202
+      nfiles: 1
