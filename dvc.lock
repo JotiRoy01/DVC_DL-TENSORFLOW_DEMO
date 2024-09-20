@@ -61,3 +61,35 @@ stages:
       hash: md5
       md5: f6f253ed2639ac54f4db3574961c030a
       size: 59135867
+  prepare_callbacks:
+    cmd: python src/stage_03_prepare_callbacks.py --config=config/config.yaml --params=params.yaml
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 995be1601034eb0d6c0f4138c6fa13cc
+      size: 476
+    - path: params.yaml
+      hash: md5
+      md5: e8a3bcb6279538c805c68dd9a7b10695
+      size: 129
+    - path: src/stage_03_prepare_callbacks.py
+      hash: md5
+      md5: d3b5121d3e19b579ec73c6dcb5036ec1
+      size: 1911
+    - path: src/utils/all_utils.py
+      hash: md5
+      md5: b96d1e923db58eb6836dfbb92460fab4
+      size: 1008
+    - path: src/utils/callbacks.py
+      hash: md5
+      md5: 0dced46bb9e1a3cfaa28e900f4f5075f
+      size: 1569
+    outs:
+    - path: artifacts/callbacks/checkpoint_cb.cb
+      hash: md5
+      md5: 030dd2da5b10d4b2a0ace1fa5f8734b5
+      size: 369
+    - path: artifacts/callbacks/tensorboard_cb.cb
+      hash: md5
+      md5: 6dea3dd4d101ee878083c0e5018a6aca
+      size: 555
