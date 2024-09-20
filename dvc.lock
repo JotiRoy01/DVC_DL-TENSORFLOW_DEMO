@@ -26,3 +26,38 @@ stages:
       md5: c7233e313677f4b2c854a1079b98423d.dir
       size: 339933560
       nfiles: 11749
+  prepare_data:
+    cmd: python src/stage_02_prepare_base_model.py --config=config/config.yaml --params=params.yaml
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 995be1601034eb0d6c0f4138c6fa13cc
+      size: 476
+    - path: src/stage_02_prepare_base_model.py
+      hash: md5
+      md5: b061f154dc4bfb60d4d8fe600b4ed251
+      size: 2378
+    - path: src/utils/all_utils.py
+      hash: md5
+      md5: b96d1e923db58eb6836dfbb92460fab4
+      size: 1008
+    - path: src/utils/models.py
+      hash: md5
+      md5: 2a0b60d5d111afb3527d4997adfd4a26
+      size: 1879
+    params:
+      params.yaml:
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+        LEARNING_RATE: 0.001
+    outs:
+    - path: artifacts/base_model/VGG16_base_model.keras
+      hash: md5
+      md5: b051885ad79e2f3280522e28e8227050
+      size: 58925535
+    - path: artifacts/base_model/updated_VGG16_bash_model.keras
+      hash: md5
+      md5: f6f253ed2639ac54f4db3574961c030a
+      size: 59135867
