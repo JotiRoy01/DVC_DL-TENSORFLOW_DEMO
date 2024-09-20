@@ -21,3 +21,15 @@ logs/running_logs.log
 src/utils/__pycache__/callbacks.cpython-310.pyc
 logs/running_logs.log
 logs/running_logs.log
+src/utils/__pycache__/data_management.cpython-310.pyc
+logs/running_logs.log
+logs/running_logs.log
+artifacts/base_model/updated_VGG16_bash_model.keras
+artifacts/base_model/VGG16_base_model.keras
+artifacts/checkpoints/ckpt_model.keras
+artifacts/model/model_at_Fri_Sep_20_10.54.19_2024_.keras
+artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_12.13.29_2024/train/events.out.tfevents.1726640021.ROY.11676.0.v2
+artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/train/events.out.tfevents.1726648823.ROY.5552.0.v2
+artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/train/events.out.tfevents.1726806475.ROY.23012.0.v2
+artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/validation/events.out.tfevents.1726650148.ROY.5552.1.v2
+artifacts/tensorboard_log_dir/tb_log_at_Wed_Sep_18_14.40.07_2024/validation/events.out.tfevents.1726807741.ROY.23012.1.v2

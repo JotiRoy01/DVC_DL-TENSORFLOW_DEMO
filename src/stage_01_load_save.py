@@ -1,4 +1,5 @@
 from src.utils.all_utils import read_yaml, create_directory
+from src.utils.data_management import validating_image
 
 import argparse
 import pandas as pd
@@ -29,9 +30,15 @@ def get_data(config_path) :
     source_downlaod_dirs = config["source_download_dirs"]
     local_data_dirs = config["local_data_dir"]
 
+
+
     for source_download_dir, local_data_dir in tqdm(zip(source_downlaod_dirs, local_data_dirs), total = 2, desc= "list of folders", colour="red") :
         create_directory([local_data_dir])
         copy_file(source_download_dir, local_data_dir)
+
+    validating_image()
+
+
 
 if __name__ == "__main__" :
     args = argparse.ArgumentParser()
